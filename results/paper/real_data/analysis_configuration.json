@@ -1,0 +1,39 @@
+{
+  "target_taxon_query": "Aves",
+  "target_taxon_rank": "class",
+  "observation_created_window": {
+    "start": "2022-01-01",
+    "end": "2024-12-31"
+  },
+  "candidate_observations_requested": 4000,
+  "horizon_days_from_first_compatible_coarse_identification": [
+    0,
+    1,
+    7,
+    30,
+    90
+  ],
+  "coarse_identification_ranks": [
+    "genus",
+    "family",
+    "order",
+    "class"
+  ],
+  "max_genera": 8,
+  "max_species_per_genus": 5,
+  "min_observations_per_species": 15,
+  "min_species_per_genus": 2,
+  "gamma_grid": [
+    6,
+    8,
+    12,
+    20
+  ],
+  "principal_gamma": 12,
+  "lineage_reference": "current species assignment",
+  "trajectory": "monotone compatible envelope; withdrawn and outside-lineage identifications audited but not used as states",
+  "quality_rule": {
+    "compatible_event_rate_min": 0.85,
+    "withdrawn_event_rate_max": 0.2
+  }
+}

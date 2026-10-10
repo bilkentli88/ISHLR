@@ -1,0 +1,13 @@
+{
+  "observations": 695,
+  "species": 22,
+  "genera": 8,
+  "gamma": 12,
+  "raw_feasible": true,
+  "eta_all": 0.0,
+  "gamma_min_all_reported_approx": 10.22,
+  "tightening_vs_hierarchy": 0.453,
+  "tightening_vs_final": 0.097,
+  "strictly_tightened_species": 21,
+  "unchanged_species": "Larus smithsonianus"
+}

@@ -1,0 +1,23 @@
+{
+  "stage": "selective_refinement_theory_gate",
+  "fixture_only": true,
+  "seed": 20261004,
+  "n": 60000,
+  "cohort_A_n": 29472,
+  "true_p_A1_in_A_cohort": 0.6074579261672095,
+  "no_assumption_interval": [
+    0.4814739413680782,
+    0.7204125950054289
+  ],
+  "no_assumption_width": 0.23893865363735067,
+  "checks": {
+    "hierarchy_bounds_contain_truth": true,
+    "nonidentification_is_material": true,
+    "finite_gamma_can_contain_truth": true,
+    "two_horizons_never_wider_when_comparable": true,
+    "refined_only_distribution_is_biased": true,
+    "robust_rule_minimizes_sensitivity_worst_case_error": true
+  },
+  "verdict": "PASS_TO_METHOD_GATE",
+  "interpretation": "Synthetic theory validation only. It does not establish that the iNaturalist process is outcome-dependent or that the method is novel."
+}

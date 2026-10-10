@@ -1,0 +1,33 @@
+{
+  "stage": "selective_refinement_general_tree_theorem_gate",
+  "fixture_only": false,
+  "proof_scope": "arbitrary finite rooted trees with valid monotone taxonomically correct trajectories",
+  "gamma_random_suite": 3.0,
+  "horizons": 3,
+  "random_tree_fixtures": 24,
+  "total_random_support_objectives": 240,
+  "global_max_full_vs_compact_support_difference": 1.1102230246251565e-15,
+  "global_max_constructive_coupling_residual": 5.238864897449957e-16,
+  "max_random_leaves": 21,
+  "max_random_flow_variables": 232,
+  "changing_selection_relative_multi_horizon_gain": 0.04510901859121619,
+  "changing_selection_strictly_tightened_leaves": 12,
+  "changing_selection_nonredundant_earlier_constraints": 4,
+  "checks": {
+    "projection_theorem_proof_written": true,
+    "constructive_sufficiency_proof_written": true,
+    "linear_sensitivity_projection_proof_written": true,
+    "sharpness_corollary_written": true,
+    "temporal_nonwidening_proof_written": true,
+    "strict_temporal_gain_characterized_by_lp_redundancy": true,
+    "all_random_truths_feasible": true,
+    "all_random_constructive_couplings_succeeded": true,
+    "random_full_vs_compact_support_functions_match": true,
+    "constructive_coupling_residual_small": true,
+    "random_extra_horizons_never_widen": true,
+    "changing_selection_fixture_has_strict_temporal_gain": true,
+    "changing_selection_has_nonredundant_earlier_constraints": true
+  },
+  "verdict": "PASS_TO_FORMAL_WRITEUP_AND_NOVELTY_AUDIT",
+  "next_step": "Perform a targeted literature novelty audit of the exact theorem: laminar/tree trajectory-flow projection, sharp subtree-mass sensitivity polytope, and multi-horizon informative-stopping bounds. If novelty survives, write the formal propositions/proofs and then add finite-sample uncertainty."
+}

@@ -1,0 +1,120 @@
+{
+  "record_type": "archived values from the validated manuscript run",
+  "live_api_warning": "Future API reruns may differ because iNaturalist identifications, current taxon assignments, and taxonomy are live.",
+  "analysis_configuration": {
+    "target_taxon_query": "Aves",
+    "target_taxon_rank": "class",
+    "observation_created_window": {
+      "start": "2022-01-01",
+      "end": "2024-12-31"
+    },
+    "candidate_observations_requested": 4000,
+    "horizon_days_from_first_compatible_coarse_identification": [
+      0,
+      1,
+      7,
+      30,
+      90
+    ],
+    "coarse_identification_ranks": [
+      "genus",
+      "family",
+      "order",
+      "class"
+    ],
+    "max_genera": 8,
+    "max_species_per_genus": 5,
+    "min_observations_per_species": 15,
+    "min_species_per_genus": 2,
+    "gamma_grid": [
+      6,
+      8,
+      12,
+      20
+    ],
+    "principal_gamma": 12,
+    "lineage_reference": "current species assignment",
+    "trajectory": "monotone compatible envelope; withdrawn and outside-lineage identifications audited but not used as states",
+    "quality_rule": {
+      "compatible_event_rate_min": 0.85,
+      "withdrawn_event_rate_max": 0.2
+    }
+  },
+  "initial_coarse_start_cohort": {
+    "observations": 695,
+    "species": 22,
+    "genera": 8
+  },
+  "quality_audit": {
+    "excluded_species": "Larus smithsonianus",
+    "excluded_observations": 56,
+    "compatible_event_rate_approx": 0.603,
+    "withdrawn_event_rate_approx": 0.417
+  },
+  "cleaned_cohort": {
+    "observations": 639,
+    "species": 21,
+    "genera": 8,
+    "compatible_event_rate": 0.979895,
+    "withdrawn_event_rate": 0.041958
+  },
+  "raw_feasibility_thresholds": {
+    "cleaned_all_horizons": 9.532272,
+    "cleaned_all_horizons_reported_approx": 9.53,
+    "cleaned_final_horizon": 1.0,
+    "unfiltered_all_horizons_reported_approx": 10.22
+  },
+  "hierarchy_only_mean_width": 0.00871898,
+  "sensitivity_path": {
+    "6": {
+      "raw_feasible_full_history": false,
+      "eta_all": 0.000149707,
+      "eta_is_approximate": false,
+      "all_mean_width": 0.00349597,
+      "final_mean_width_common_relaxation": 0.00566301,
+      "tightening_vs_hierarchy": 0.599,
+      "tightening_vs_final": 0.383
+    },
+    "8": {
+      "raw_feasible_full_history": false,
+      "eta_all": 3.7e-05,
+      "eta_is_approximate": true,
+      "all_mean_width_approx": 0.003076,
+      "final_mean_width_common_relaxation_approx": 0.005148,
+      "tightening_vs_hierarchy": 0.647,
+      "tightening_vs_final": 0.402
+    },
+    "12": {
+      "raw_feasible_full_history": true,
+      "eta_all": 0.0,
+      "eta_is_approximate": false,
+      "all_mean_width": 0.00404156,
+      "final_mean_width_common_relaxation": 0.00563621,
+      "tightening_vs_hierarchy": 0.536,
+      "tightening_vs_final": 0.283,
+      "principal_setting": true
+    },
+    "20": {
+      "raw_feasible_full_history": true,
+      "eta_all": 0.0,
+      "eta_is_approximate": false,
+      "all_mean_width_approx": 0.005568,
+      "final_mean_width_common_relaxation_approx": 0.006549,
+      "tightening_vs_hierarchy": 0.361,
+      "tightening_vs_final": 0.15
+    }
+  },
+  "unfiltered_robustness_at_gamma12": {
+    "observations": 695,
+    "species": 22,
+    "genera": 8,
+    "gamma": 12,
+    "raw_feasible": true,
+    "eta_all": 0.0,
+    "gamma_min_all_reported_approx": 10.22,
+    "tightening_vs_hierarchy": 0.453,
+    "tightening_vs_final": 0.097,
+    "strictly_tightened_species": 21,
+    "unchanged_species": "Larus smithsonianus"
+  }
+}

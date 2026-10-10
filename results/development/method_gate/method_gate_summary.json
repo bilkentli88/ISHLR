@@ -1,0 +1,24 @@
+{
+  "stage": "selective_refinement_method_gate",
+  "fixture_only": true,
+  "seed": 20261004,
+  "gamma": 8.0,
+  "horizons": 3,
+  "nodes": 4,
+  "binary_lp_grid_max_endpoint_difference": 1.7994509049490404e-07,
+  "mean_relative_interval_reduction": 0.3647317793991681,
+  "max_children_benchmarked": 48,
+  "max_total_seconds": 0.03483526400032133,
+  "checks": {
+    "binary_lp_matches_dense_grid": true,
+    "all_true_child_distributions_are_contained": true,
+    "all_horizons_never_widen_intervals": true,
+    "at_least_one_strict_multi_horizon_gain": true,
+    "extreme_points_reconstruct_valid_mechanisms": true,
+    "robust_losses_cover_true_losses": true,
+    "all_scaling_problems_solved": true,
+    "largest_local_problem_under_five_seconds": true
+  },
+  "verdict": "PASS_TO_GLOBAL_COMPATIBILITY_GATE",
+  "interpretation": "Synthetic local-node validation only. A pass establishes a sharp polyhedral local method, not global trajectory compatibility, real-data MNAR, or publication-level novelty."
+}

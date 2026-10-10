@@ -1,0 +1,35 @@
+{
+  "stage": "selective_refinement_sample_analog_consistency_gate",
+  "gamma": 3.1,
+  "sample_sizes": [
+    250,
+    500,
+    1000,
+    2000,
+    5000
+  ],
+  "seeds_per_sample_size": 50,
+  "total_replicates": 250,
+  "population_max_sibling_odds_ratio": 2.9841269841269846,
+  "population_robust_risk": 1.6257747478153086,
+  "endpoint_error_loglog_slope": -0.45241227895202746,
+  "risk_error_loglog_slope": -0.4582446175062564,
+  "endpoint_error_reduction_small_to_large_n": 0.7481284972243707,
+  "risk_error_reduction_small_to_large_n": 0.7276212992734263,
+  "largest_n_raw_lp_feasibility": 1.0,
+  "largest_n_p90_eta_hat": 0.0,
+  "checks": {
+    "population_polytope_feasible": true,
+    "population_robust_risk_feasible": true,
+    "all_minimum_relaxation_problems_feasible": true,
+    "all_relaxed_assignment_lps_feasible": true,
+    "p90_relaxation_vanishes_by_largest_n": true,
+    "endpoint_error_reduces_by_at_least_50pct": true,
+    "risk_error_reduces_by_at_least_50pct": true,
+    "risk_convergence_slope_reasonable": true,
+    "largest_n_raw_lp_feasibility_at_least_95pct": true
+  },
+  "verdict": "PASS_TO_REAL_TRAJECTORY_PILOT",
+  "interpretation": "The correct finite-sample object is a plug-in/sample-analogue estimator of the population identified set, not a confidence set forced to contain the realized hidden labels. The minimum-relaxation repair only restores feasibility when needed and vanishes with n. Confidence-region construction for the population identified set is a separate inferential layer.",
+  "next_step": "Run a real iNaturalist trajectory pilot using the plug-in estimator, report the required eta_hat by node/horizon, and verify that real-data sample sizes are large enough for the empirical sensitivity polytope to be informative before training image models."
+}

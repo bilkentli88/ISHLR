@@ -1,0 +1,5 @@
+node,simplex,probabilities,monotone_horizons,reconstructs_observed,gamma_bound
+ROOT,True,True,True,True,True
+A,True,True,True,True,True
+B,True,True,True,True,True
+C,True,True,True,True,True

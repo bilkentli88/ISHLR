@@ -1,0 +1,4 @@
+method,empirical_accuracy,sensitivity_worst_case_error
+naive_refined_only,0.782607220412595,0.31059315279775057
+robust_gamma_16,0.7825732899022801,0.3084373337185934
+oracle_bin,0.782607220412595,

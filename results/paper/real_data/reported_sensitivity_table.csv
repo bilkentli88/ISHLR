@@ -1,0 +1,5 @@
+gamma,raw_feasible_full_history,eta_all_horizons,eta_is_approximate,hierarchy_only_mean_width,final_mean_width_common_relaxation,all_mean_width,widths_are_approximate,tightening_vs_hierarchy,tightening_vs_final_common_relaxation
+6,No,0.000149707,False,0.00871898,0.00566301,0.00349597,False,0.599,0.383
+8,No,3.7e-05,True,0.00871898,0.005148,0.003076,True,0.647,0.402
+12,Yes,0.0,False,0.00871898,0.00563621,0.00404156,False,0.536,0.283
+20,Yes,0.0,False,0.00871898,0.006549,0.005568,True,0.361,0.15
